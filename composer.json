@@ -1,0 +1,110 @@
+{
+    "name": "yiisoft/yii-project-template",
+    "type": "project",
+    "description": "Yii Framework Project Template",
+    "keywords": [
+        "yii",
+        "app",
+        "project",
+        "template"
+    ],
+    "homepage": "https://github.com/yiisoft/yii-project-template",
+    "license": "BSD-3-Clause",
+    "support": {
+        "source": "https://github.com/yiisoft/yii-project-template",
+        "issues": "https://github.com/yiisoft/yii-project-template/issues",
+        "wiki": "https://github.com/yiisoft/yii-project-template/wiki",
+        "forum": "http://www.yiiframework.com/forum/"
+    },
+    "authors": [
+        {
+            "name": "Qiang Xue",
+            "role": "Founder and project lead",
+            "email": "qiang.xue@gmail.com",
+            "homepage": "http://www.yiiframework.com/"
+        },
+        {
+            "name": "Alexander Makarov",
+            "role": "Core framework development",
+            "email": "sam@rmcreative.ru",
+            "homepage": "http://rmcreative.ru/"
+        },
+        {
+            "name": "Maurizio Domba",
+            "role": "Core framework development",
+            "homepage": "http://mdomba.info/"
+        },
+        {
+            "name": "Carsten Brandt",
+            "role": "Core framework development",
+            "email": "mail@cebe.cc",
+            "homepage": "http://cebe.cc/"
+        },
+        {
+            "name": "Paul Klimov",
+            "role": "Core framework development",
+            "email": "klimov.paul@gmail.com"
+        },
+        {
+            "name": "Dmitry Naumenko",
+            "role": "Core framework development",
+            "email": "d.naumenko.a@gmail.com"
+        },
+        {
+            "name": "Boudewijn Vahrmeijer",
+            "role": "Core framework development",
+            "email": "info@dynasource.eu",
+            "homepage": "http://dynasource.eu"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "yiisoft/yii-base-web": "^3.0@dev",
+        "yiisoft/yii-dataview": "^3.0@dev",
+        "yiisoft/yii-bootstrap4": "^3.0@dev",
+        "yiisoft/yii-jquery": "^3.0@dev",
+        "yiisoft/yii-console": "^3.0@dev",
+        "yiisoft/cache": "^3.0@dev",
+        "yiisoft/di": "^3.0@dev",
+        "yiisoft/log": "^3.0@dev",
+        "yiisoft/rbac": "^3.0@dev",
+        "yiisoft/view": "^3.0@dev",
+        "yiisoft/yii-base-api": "^3.0@dev",
+        "casbin/yii-adapter": "dev-yii3",
+        "yiisoft/db-mysql": "^3.0@dev"
+    },
+    "require-dev": {
+        "foxy/foxy": "^1.0",
+        "yiisoft/yii-debug": "^3.0@dev",
+        "hiqdev/composer-config-plugin": "^1.0@dev"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "3.0.x-dev"
+        },
+        "config-plugin": {
+            "common": "config/common.php",
+            "params": "config/params.php",
+            "web": "config/web.php"
+        }
+    },
+    "autoload": {
+        "psr-4": {"demo\\": "src"}
+    },
+    "config": {
+        "foxy": {
+            "enable-packages": {
+                "*": true
+            }
+        },
+        "fxp-asset": {
+            "enabled": false
+        }
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/jk2K/yii-casbin.git"
+        }
+    ]
+}
